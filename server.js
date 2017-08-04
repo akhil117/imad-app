@@ -5,11 +5,62 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+
+
+
+var Content = {
+    title:'B.Sai Akhil Articile',
+    heading:'Article name',
+    date:'Aug 4,2016',
+    content:` <p>
+                Hi my name is akhil iam from amrita...................................
+            </p>
+            <p>
+                Hi like new things to learn and this my passion too so that is work hard dont try to skip when u meet failures. These are the steps to be success. These will lead to achieve any thing in u r life
+            </p>
+            <p>
+                Simply lets end this session thanks every body
+                good day bye bye bye bye :} *****/////
+            </p>`
+    
+};
+function createtemplate(data){
+    var date =data.date;
+    var heading = data.heading;
+    var title = data.title;
+    var content = data.content;
+
+var htmltemplate=`
+      <html>
+    <head>
+        <title>${title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="/ui/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div>
+        <a href="/">home</a>
+        </div>
+        <hr/>
+        <h3>${heading}</h3>
+        <div> This is akhil articile</div>
+        <div>${date}</div>
+        <div class = "Container">
+        <div>${content}</div>
+        </div>
+    </body>
+</html>
+
+
+`;
+return htmltemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/name', function (req, res) {
-  res.sendFile(path.join(__dirname,'ui', 'name.html'));
+  res.sen  d(createTemplate(Content));
 });
 
 
