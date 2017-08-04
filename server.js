@@ -13,11 +13,11 @@ app.get('/article-1', function(req,res){
 });
 
 app.get('/article-2',function(req,res){
-    res.send("this is article 2 ")
+    res.send("this is article 2 ");
     
 });
 app.get('/article-3',function(req,res){
-    res.send("this is article 2 ")
+    res.send("this is article 2 ");
     
 });
 
