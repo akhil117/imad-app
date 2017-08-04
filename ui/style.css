@@ -19,6 +19,7 @@ body {
 .img-medium {
     height: 200px;
 }
+
 .Container{
              background: #ffb7b7;
                margin:auto;
@@ -28,5 +29,5 @@ body {
              padding-right:20px;
              width:20000px;
              height:100px;
-        }
+ }
 
