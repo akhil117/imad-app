@@ -10,6 +10,6 @@ var count=0;
 function m()
 {
       count = count + 1; 
-    document.getElementById("button").inner.value = count;
+    document.getElementById("button").inner.HTML = count;
     confirm("count");
 }
