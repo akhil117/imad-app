@@ -4,6 +4,6 @@ button.onclick= function()
 {
     var  counter = counter + 1; 
       
-      document.getElementById("count").innerHTML = count.toString();
+      document.getElementById("count").innerHTML = counter.toString();
     
 };
