@@ -6,11 +6,11 @@ var img = document.getElementById('boma');
 img.onclick = function(){
     img.style.marginRight="100px" ;
 };
-
+var counter = 0;
 function m()
 {
-    /*var  count = count + 1; 
-      console.log(count);
-    document.getElementById("counter").innerHTML = count.toString();*/
+    var  counter = counter + 1; 
+      
+      document.getElementById("count").innerHTML = count.toString();
     
 }
