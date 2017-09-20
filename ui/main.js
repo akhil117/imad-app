@@ -7,7 +7,7 @@ img.onclick = function(){
     img.style.marginRight="100px" ;
 };
 var count=0;
-function myfunction()
+function m()
 {
       count = count + 1; 
     document.getElementById("button").inner.value = count;
