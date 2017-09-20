@@ -11,4 +11,5 @@ function myfunction()
 {
       count = count + 1; 
     document.getElementById("button").inner.value = count;
+    confirm("count");
 }
