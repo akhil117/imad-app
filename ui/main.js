@@ -9,8 +9,8 @@ img.onclick = function(){
 
 function m()
 {
-    var  count = count + 1; 
+    /*var  count = count + 1; 
       console.log(count);
-    document.getElementById("counter").innerHTML = count.toString();
+    document.getElementById("counter").innerHTML = count.toString();*/
     
 }
