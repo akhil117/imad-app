@@ -1,9 +1,19 @@
 var button = document.getElementById('counter');
-var counter = 0;
-button.onclick= function() 
+
+
+var request = new XMLHttpRequest();
+
+request.onreadystatechange = function()
 {
-    counter = counter + 1; 
-      
-      document.getElementById("count").innerHTML = counter.toString();
-    
+    if(request.readychange==XMLHttpRequest.Done)
+    {
+        if(request.status==200)
+        {
+            var counter = request.responseText;
+             document.getElementById("count").innerHTML = counter.toString();
+        }
+    }
 };
+
+     request.open('GET','http://akhilbatchu123.imad.hasura-app.io/counter',true);
+request.send();
