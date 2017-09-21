@@ -17,14 +17,19 @@ request.onreadystatechange = function()
 };
 request.open('GET','http://akhilbatchu123.imad.hasura-app.io/counter',true);
 request.send(null);
+};
 
 
 
 var a = document.getElementById('name').innerHTML;
+var submit = document.getElementById('SubmitBox');
+submit.onclick = function()
+{
 var names = ['name1','name2','name3'];
 var list = "";
 for(var i=0 ; i<names.length;i++)
 {
     list +=  "<li>"+name[i]+"</li>"; 
 }
+document.getElementById('list').innerHTML = list;
 };
