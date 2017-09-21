@@ -16,4 +16,4 @@ request.onreadystatechange = function()
 };
 
      request.open('GET','http://akhilbatchu123.imad.hasura-app.io/counter',true);
-request.send();
+request.send(null);
